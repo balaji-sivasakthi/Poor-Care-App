@@ -4,5 +4,173 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".Donate">
+
+    <TextView
+        android:id="@+id/donatehead"
+        android:text="Donate Food Details"
+        android:textSize="24dp"
+        android:textColor="@color/orange_700"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <!--Pick Where Group-->
+
+    <TextView
+        android:id="@+id/pickupTv"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_below="@id/donatehead"
+        android:text="Pickp Where?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:id="@+id/pickupEv"
+        android:layout_below="@id/pickupTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <!--=Food Item Group-->
+
+    <TextView
+        android:id="@+id/foodtiemTv"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_below="@id/pickupEv"
+        android:text="Food Items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:id="@+id/foodtiemEv"
+        android:layout_below="@id/foodtiemTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <!--Prefered Time Group-->
+
+    <TextView
+        android:id="@+id/preferTv"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_below="@id/foodtiemEv"
+        android:text="Prefered Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:id="@+id/preferEv"
+        android:layout_below="@id/preferTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <!--Pickup Day Group-->
+
+    <TextView
+        android:id="@+id/pickupdayTv"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_below="@id/preferEv"
+        android:text="Pickup Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:id="@+id/pickupdayEv"
+        android:layout_below="@id/pickupdayTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <!--Quality Group-->
+
+    <TextView
+        android:id="@+id/QualityTv"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_below="@id/pickupdayEv"
+        android:text="Quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+   <com.google.android.material.slider.Slider
+       android:id="@+id/Qualityslider"
+       android:layout_marginTop="10dp"
+       android:layout_below="@id/QualityTv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </com.google.android.material.slider.Slider>
+
+    <!--Photos Group-->
+
+    <TextView
+        android:id="@+id/photoTv"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_below="@id/Qualityslider"
+        android:text="Photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <LinearLayout
+        android:id="@+id/photolayout"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/photoTv"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@color/orange_700"
+            android:layout_width="70dp"
+            android:layout_height="100dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:background="@color/orange_700"
+            android:layout_width="70dp"
+            android:layout_height="100dp">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/photolayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+        </CheckBox>
+
+        <TextView
+            android:text="@string/i_assure_that_food_quality_and_hygiene_has_maintained"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+    <Button
+        android:text="Submit"
+        android:backgroundTint="@color/orange_700"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
 </RelativeLayout>
