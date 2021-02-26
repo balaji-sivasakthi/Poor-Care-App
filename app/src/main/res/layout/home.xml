@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:foreground="?selectableItemBackground"
+        android:id="@+id/donate"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:background="@drawable/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bx_bx_donate_heart">
+
+        </ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:foreground="?selectableItemBackground"
+        android:id="@+id/ngo"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:background="@drawable/c_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/codicon_organization">
+
+        </ImageView>
+
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
